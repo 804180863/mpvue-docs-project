@@ -30,9 +30,9 @@ export default {
          this.index = event.mp.detail.current
      },
      toBooks(){
-        // 跳转页面
-        wx.navigateTo({
-          url: '/pages/books/main'
+        // 跳转页面wx.switchTab(Object object)
+        wx.switchTab({
+          url:'/pages/books/main'
         })
       }
  },
