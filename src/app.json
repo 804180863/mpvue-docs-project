@@ -5,7 +5,8 @@
     "pages/bookList/main",
     "pages/personal/main",
     "pages/searchBook/main",
-    "pages/detail/main"
+    "pages/detail/main",
+    "pages/scan/main"
 
   ],
   "window": {

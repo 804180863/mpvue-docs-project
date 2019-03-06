@@ -7,7 +7,7 @@
     </div>
     <div class="list">
       <div class="card">
-        <span>扫码看书</span>
+        <span @click="handleScanCode">扫码看书</span>
         <span class="more">more ></span>
       </div>
       <div class="card">
@@ -43,6 +43,11 @@
         if(res.mp.detail.userInfo){
           this.userInfo = res.mp.detail.userInfo
         }
+      },
+       handleScanCode(){
+        wx.navigateTo({
+          url: '/pages/scan/main'
+        })
       }
     }
   }
